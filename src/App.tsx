@@ -1,9 +1,18 @@
-import LoginForm from './components/auth/loginForm'
+import { createTheme, ThemeProvider } from '@mui/material'
+import Routes from './routes/Routes'
+
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  }
+})
 
 function App() {
 
   return (
-    <LoginForm />
+    <ThemeProvider theme={darkTheme}>
+    <Routes />
+    </ThemeProvider>
   )
 }
 
