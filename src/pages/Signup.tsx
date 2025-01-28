@@ -1,8 +1,8 @@
-import LoginForm from "../components/auth/LoginForm"
+import SignupForm from "../components/auth/SignupForm"
 
 function Signup() {
   return (
-    <LoginForm />
+    <SignupForm />
   )
 }
 
